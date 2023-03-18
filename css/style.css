@@ -1,0 +1,40 @@
+.card {
+    background-color: rgb(185, 182, 182);
+    padding: 1em 2em;
+}
+
+.form-group {
+    display: flex ;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+.i {
+    border: 1px solid black;
+}
+
+.button {
+    background-color: rgb(137, 202, 235);
+    border-radius: 5px;
+}
+
+.reset {
+    background-color: rgb(137, 202, 235);
+    border-radius: 5px;
+}
+
+input [type="text"] {
+    width: 90%;
+}
+
+.icon {
+    width: 1%;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+
+
