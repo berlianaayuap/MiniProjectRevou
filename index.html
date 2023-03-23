@@ -5,46 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        div {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    </style>
+    </style>
+    
+    
+    <style>
+        body {
+          background-image: url("assets/background.jpg");
+          background-repeat: no-repeat;
+          background-attachment: fixed; 
+          background-size: cover;    
+        }
+
+    </style>
 </head>
 <body>
     <div id="calculator">
-        <h2>Kalkulator BMI</h2>
-        <p> 
-            Berat badan ideal adalah impian semua orang semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan idel juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.
+        <h2 style="text-align: center;">Kalkulator BMI</h2>
+        <p style="text-align: justify;">Berat badan ideal adalah impian semua orang.
+            Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat.
+            Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.
         </p>
 
         <div class="card">
-            <form id="name" class="form">
+            <form id="" name="" class="form">
                 <div class="form-group-jk">
                     <strong>Jenis Kelamin</strong>
-                    <input type="radio" name="jenis-kelamin" value="l" required="true" >
+                    <input type="radio" name="jenis-kelamin" value="l" required>
                     <label for="jenis-kelamin">Pria</label>
-                    <input type="radio" name="jenis-kelamin" value="p" required="true">
-                    <label for="perempuan">Wanita</label>
+                    <input type="radio" name="jenis-kelamin" value="p">
+                    <label for="jenis-kelamin">Wanita</label>
                 </div>
-                <div class="form-group">
-                    <label for="berat-badan">Berat Badan (Kg)</label>
+                <div id="form-group">
+                    <label for="berat-badan">Berat Badan (kg)</label>
                     <div class="icon-input">
                         <i class="fa-solid fa-pencil"></i>
-                        <input name="berat-badan" type="text" required="true">
+                        <input id="berat-badan" type="text" required="true">
                     </div>
                 </div>
-                <div class="form-group">
+                <div id="form-group">
                     <label for="usia">Usia (Tahun)</label>
                     <div class="icon-input">
                         <i class="fa-solid fa-pencil"></i>
-                        <input name="usia"  type="text" required="true">
+                        <input id="usia" type="text" required="true">
                     </div>
                 </div>
-                <div class="form-group">
+                <div id="form-group">
                     <label for="tinggi-badan">Tinggi Badan (cm)</label>
                     <div class="icon-input">
                         <i class="fa-solid fa-pencil"></i>
-                        <input name="tinggi-badan"  type="text" required="true">
+                        <input id="tinggi-badan" type="text" required="true">
                     </div>
                 </div>
+                <br>
                 <div class="button-group">
                     <button id="hitung" type="submit" class="button">Hitung BMI</button>
                     <button id="reset" class="reset">Reset</button>
@@ -52,19 +76,58 @@
             </form>
         </div>
 
-        <div class="footer">
-            <h2>Keunggulan Fitur</h2>
-            <br>1. Menghitung berat badan
-            <br>2. Menentukan kategori berat badan ideal atau tidak
-            <br>3. Mempersiapkan program penurunan berat badan
-
-            <p> 
-                Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter. 
-            </p>
-            <p>
-                Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam Kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup>
-            </p>
+        <div
+            class="footer">
+            <p><h3>Keunggulan Fitur</h3></p>
+            <ol type="1">
+                <li>Menghitung berat badan</li>
+                <li>Menentukan kategori berat badan ideal atau tidak</li>
+                <li>Mempersiapkan program penurunan berat badan</li>
+            </ol>
+            <p style="text-align: justify;">Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+            <p style="text-align: justify;">Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam Kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/m<sup>2</sup></p>
         </div>
     </div>
+    <h2 style="text-align: center;">Hasil</h2>
+
+    <div class="result">
+        <script src="js/index.js"></script>
+        <p style="text-align: center; font-size:x-large; font-weight: bold; color: red;"  id="hasil-perhitungan"></p>
+        <label for="bmi-output" id="bmilabel"></label>
+        <input type="text" id="bmi-output" style="text-align: center;">
+    <div style="text-align: center;" id="hasil">
+        <button oneclick="myFuncion ()">
+            Download Hasil BMI
+        </button>
+    </div>
+    </div>
+
+    <div id="calculator">
+        <p style="text-align: justify;">BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda
+        </p>
+    </div>
+
+    <div class="penyakit">
+        <h3 style="text-align: center;">Beberapa penyakit yang berasal dari kegemukan</h3>
+        <p style="text-align: center;">Diabetes</p>
+        <p style="text-align: center;">Hipertensi</p>
+        <p style="text-align: center;">Sakit Jantung</p>
+        <p style="text-align: center;">Osteoarthiris</p>
+        <div style="text-align: center;" class="button-group">
+            <button id="konsultasi" type="submit" class="button">Konsultasi Dokter via Aplikasi</button>
+            <button id="konsultasi" type="submit" class="button">Registrasi Online Sekarang</button>
+        </div>
+    </div>
+
+    <div>
+        <p style="text-align: center;">Download Aplikasi</p>
+        <a href="https://play.google.com/store/apps">
+            <img style="margin-left: 430px;" src="assets/googleplay.png" alt="googleplay"  title="Download on Google Play" width="250" height="90">
+        </a>
+        <a href="https://www.apple.com/store">
+            <img style="margin-left: 10px;" src="assets/applestore.png" alt="applestore" title="Download on Apple Store" width="250" height="100">
+        </a>
+
+    </div>  
 </body>
 </html>
